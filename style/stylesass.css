@@ -1,0 +1,186 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+}
+
+.title {
+  text-align: center;
+}
+
+.ename {
+  font-size: 12px;
+}
+
+hr {
+  margin: 0 10px 0 10px;
+  border: solid 1px #318497;
+  background-color: #318497;
+  border-radius: 50%;
+  height: 2px;
+}
+
+body {
+  margin: 100px auto;
+  background-color: #318497;
+}
+body .resume {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 2%;
+  overflow: hidden;
+}
+body .resume .left {
+  display: flex;
+  flex-direction: column;
+  flex: 2.2;
+  background-color: #f2c8c8;
+}
+body .resume .left .picture {
+  flex: 0.6;
+  position: relative;
+}
+body .resume .left .picture .pic1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+body .resume .left .picture .pic1 .img1 {
+  position: absolute;
+  right: -20px;
+  bottom: -18px;
+  height: 200px;
+}
+body .resume .left .intro {
+  flex: 1;
+  padding-top: 60px;
+}
+body .resume .left .intro .introtxt {
+  font-weight: 500;
+  line-height: 25px;
+  padding: 0px 20px;
+}
+body .resume .left .contact {
+  flex: 0.9;
+}
+body .resume .left .contact .ul1 {
+  font-size: 14px;
+  list-style: none;
+  line-height: 30px;
+  padding-left: 45px;
+}
+body .resume .left .contact .ul1 .li1 {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+body .resume .left .contact .ul1 .li1 img {
+  width: 20%;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+}
+body .resume .left .contact .ul1 .li1::before {
+  content: "";
+}
+body .resume .right {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  background-color: #c77e46;
+  padding-bottom: 40px;
+}
+body .resume .right .exp {
+  flex: 1;
+}
+body .resume .right .exp .timeline {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-left: solid 2px #4f4f4f;
+}
+body .resume .right .exp .timeline .timeblock {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+body .resume .right .exp .timeline .timeblock .time {
+  padding: 3px 6.5px 3px 3px;
+  font-size: 12px;
+  color: aliceblue;
+  background-color: #333;
+  position: absolute;
+  left: -8%;
+}
+body .resume .right .exp .timeline .timeblock .arrow {
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+  border-top: #333 solid 8px;
+  border-right: #333 solid 7px;
+  position: absolute;
+  left: 6%;
+  top: 3.5%;
+}
+body .resume .right .exp .timeline .timeblock h3 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+body .resume .right .exp .timeline .timeblock p {
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 10px;
+}
+body .resume .right .skill {
+  margin-top: 20px;
+  flex: 1.3;
+}
+body .resume .right .skill .code {
+  position: relative;
+  height: 20px;
+  margin: 20px 30px 20px 60px;
+  border: solid 2px #333;
+}
+body .resume .right .skill .code p {
+  width: 40px;
+  text-align: right;
+  position: absolute;
+  top: -90%;
+  left: -18%;
+}
+body .resume .right .skill .code div {
+  box-sizing: border-box;
+  background-color: #333;
+  height: 12px;
+  width: 80%;
+  margin: 4px 4px 4px 4px;
+}
+body .resume .right .skill .lang {
+  display: flex;
+  margin: 50px 30px 20px 50px;
+  padding-right: 30px;
+  height: 200px;
+  align-items: flex-end;
+  border-left: solid 2px #333;
+  border-bottom: solid 2px #333;
+}
+body .resume .right .skill .lang div {
+  position: relative;
+  flex: 1;
+  margin: 0px 0px 0px 40px;
+  background-color: #333;
+}
+body .resume .right .skill .lang div p {
+  position: absolute;
+  width: 200%;
+  bottom: -40px;
+  left: -25%;
+}
